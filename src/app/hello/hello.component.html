@@ -1,0 +1,27 @@
+<h1 (click)="clicked()">hello {{name}}!</h1>
+<br>
+
+<h2>{{count}}</h2>
+<p></p>
+
+<button (click)="increment()"> +1 </button>
+<button (click)="decrement()"> -1 </button>
+
+<br>
+
+<ul *ngIf="isVisible">
+    <li *ngFor="let item of list">
+        Valor: {{item.name}}
+    </li>
+</ul>
+<br>
+
+<div>
+    <label> Nome </label>
+    <input type="text" [(ngModel)]="nome"> 
+    <button (click)="submit()">submit</button>
+</div>
+<br>
+<button (click)="mudarRota()"> Mudar Rota </button>
+<br>
+<button (click)="buscarEndereco()"> Buscar endereco </button>
